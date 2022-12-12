@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+
+.wrapper button {
+  padding: 0px 3px !important;
+  display: flex;
+  align-items: center;
+}
+.wrapper button svg {
+  width: 34px;
+}

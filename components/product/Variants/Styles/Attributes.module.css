@@ -1,0 +1,148 @@
+.container {
+  margin-top: 10px;
+  padding-left: 0;
+}
+
+.wrapper {
+  width: 100%;
+  /* border-top: solid 1px #cdcdcd; */
+  padding-top: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-gap: 10px; */
+}
+
+.attributeWrapper {
+  display: flex;
+}
+
+.optionsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+}
+
+/* .attributeWrapper > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+} */
+
+.optionHeader {
+  grid-column: 1/-1;
+}
+
+.optionTitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.optionMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.optionImageWrapper {
+  /* float: left;
+  margin-right: 11px;
+  margin-bottom: 10px; */
+  position: relative;
+  margin: 15px 0;
+}
+
+.optionImageWrapper,
+.optionImageWrapper label {
+  cursor: pointer;
+}
+
+.attributeOptionImage:not(.active) {
+  box-shadow: 0 0 1px #00000066;
+}
+
+.attributeOptionImage {
+  height: 75px;
+  width: 75px;
+}
+
+.attributeOptionImage.active {
+  opacity: 1 !important;
+}
+
+.optionImageWrapper.active::after {
+  content: "";
+  position: absolute;
+  height: 71px;
+  width: 71px;
+  border: 2px solid #878787;
+  /* margin: 5px; */
+  top: -3px;
+  left: -3px;
+}
+
+.optionTextareaField {
+  border: 1px solid #c8c8c8;
+  padding: 10px;
+  line-height: initial;
+}
+
+.attributeOptionSpan {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.attributeOptionTooltip {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(-40%, -120%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.optionImageWrapper.disabled:hover .attributeOptionTooltip {
+  display: block;
+}
+
+.attributeOptionTooltip span {
+  white-space: nowrap;
+}
+
+.ddText {
+  display: block;
+  width: 65px;
+  text-align: center;
+  margin-top: 5px;
+  color: #aaa;
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.optionSelect {
+  display: block !important;
+  border: 1px solid #c8c8c8;
+  font-weight: 500;
+  color: #000;
+  padding-left: 5px !important;
+}
+
+.optionSelect option {
+  color: #000;
+}
+
+.ddTextActive {
+  display: block;
+  width: 65px;
+  text-align: center;
+  margin-top: 5px;
+  color: #333;
+  font-size: 10px;
+  line-height: 1.2;
+  font-weight: 500;
+}

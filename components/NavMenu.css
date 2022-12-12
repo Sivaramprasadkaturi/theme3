@@ -1,0 +1,305 @@
+.mobile-nav-bar-container {
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  transition: transform 0.4s ease-in-out;
+  transform: translateX(-100%);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.mobile-nav-bar-container[open] {
+  transform: translateX(0%);
+}
+
+.mobile-nav-bar-container[open] .nav-wrapper.actual-nav {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.cate-Wholesale {
+  display: none !important;
+}
+.cate-Retail ul {
+  display: flex;
+}
+.servicemarketplace-Wholesale {
+  display: none;
+}
+.servicemarketplace-B2C {
+  display: none;
+}
+.servicemarketplace-Container {
+  display: none;
+}
+.servicemarketplace-Business {
+  display: none;
+}
+.businessdirectory-Wholesale {
+  display: none;
+}
+.businessdirectory-B2C {
+  display: none;
+}
+.businessdirectory-Container {
+  display: none;
+}
+.businessdirectory-Service {
+  display: none;
+}
+.servicemarketplace-Service {
+  margin: 50px 0px;
+  display: flow-root;
+  height: 100%;
+}
+.businessdirectory-Business {
+  margin: 70px 0px;
+  display: flow-root;
+  height: 100%;
+}
+.businessdirectory-Business a {
+  width: 18%;
+  height: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border: 0.5px solid #e2e2e2;
+  border-radius: 15px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 2%;
+}
+.businessdirectory-Business a:hover {
+  box-shadow: 2px 2px 6px #00000029;
+}
+.businessdirectory-Business a img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+.arrowdropdown{
+  display: flex;
+  margin-left: 8px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+.arrowdropdown img{
+width: 10px;
+color: #707070;
+}
+.businessdirectory-Business a p {
+  letter-spacing: 0px;
+  color: #1FB53A;
+  opacity: 1;
+  font-size: 19px;
+  padding: 5px 20px 20px 20px;
+  text-align: center;
+  line-height: initial;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+}
+
+.servicemarketplace-Service a {
+  width: 18%;
+  height: auto;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 1px 1px 3px #00000029;
+  border: 0.5px solid #e2e2e2;
+  border-radius: 15px;
+  opacity: 1;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 2%;
+}
+.servicemarketplace-Service a:hover {
+  box-shadow: 2px 8px 12px #00000029;
+}
+.servicemarketplace-Service a img {
+  width: 85px;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 10px 0;
+  object-fit: scale-down;
+}
+.primary-nav li a i {
+  color: #4b4b4b;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.servicemarketplace-Service a p {
+  letter-spacing: 0px;
+  color: #1FB53A;
+  opacity: 1;
+  font-size: 19px;
+  padding: 5px 20px 10px 20px;
+  text-align: center;
+  line-height: initial;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.mobile-nav-icon > span {
+  background: #666666;
+  display: block;
+  margin: 8px 0;
+  position: relative;
+  height: 2px;
+  width: 18px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.mobile-nav-icon-light > span {
+  background: #fff;
+}
+
+.mobile-nav-icon > span::before,
+.mobile-nav-icon > span::after {
+  background: #666666;
+  content: "";
+  display: block;
+  height: 2px;
+  top: -8px;
+  position: absolute;
+  width: 22px;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.mobile-nav-icon-light > span::before,
+.mobile-nav-icon-light > span::after {
+  background: #fff;
+}
+
+.mobile-nav-icon > span::after {
+  top: inherit;
+  bottom: -8px;
+}
+
+.material-icons.mobile-nav-icon[open] > span {
+  background: transparent;
+}
+
+.material-icons.mobile-nav-icon[open] > span::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.material-icons.mobile-nav-icon[open] > span::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.nav-content-wrapper {
+  height: 100%;
+}
+
+.search-bar-container {
+  padding: 5px 5% 10px;
+}
+.search-bar-wrapper {
+  padding: 0 10px;
+  position: relative;
+  background-color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1023px) {
+  /* .servicemarketplace-Service a{
+      width: 48% !important;
+      margin-right: 2% !important;
+  } */
+  .businessdirectory-Business a {
+    width: 48% !important;
+    margin-right: 2% !important;
+  }
+
+  .servicemarketplace-Service a img {
+    width: 50px !important;
+    height: 50px !important;
+    margin-bottom: 0px !important;
+    margin-top: 20px !important;
+  }
+  .servicemarketplace-Service a p {
+    padding: 10px 20px 10px 20px !important;
+    height: 50px !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+  }
+  .dropdown-content-mobile {
+    background-color: #fff;
+    display: block;
+    min-width: 160px;
+    overflow: auto;
+    padding-left: 25px;
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #31ac26;
+    margin-top: 15px;
+  }
+
+  .dropdown-content-mobile .subchilds1 {
+    padding: 8px 0 !important;
+  }
+
+  .dropdown-content-mobile .subchilds1 a {
+    font-weight: 500 !important;
+  }
+
+  .dropdown-content-mobile.showMenu {
+    display: none;
+  }
+  #nav-menu-drawer ul.staticMenu li {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    float: none;
+    justify-content: space-between;
+    margin: 0px 0 !important;
+    padding: 15px 0;
+    width: 100%;
+  }
+  #mobileStores{
+    display: none !important;
+  }
+
+  #nav-menu-drawer ul.staticMenu > li img {
+    margin-right: 5px;
+    width: 20px;
+  }
+
+  #nav-menu-drawer ul.staticMenu > li:not(:first-of-type) {
+    border-top: 1px solid #b1b1b1;
+  }
+
+  .menuCat .material-icons {
+    margin-left: auto;
+  }
+}

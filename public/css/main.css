@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+:root {
+  --text-color: #333;
+  --text-color-light: #666;
+  --primary-color: #e21a23;
+  --secondary-color: #2aa841;
+  --font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  /* font-family: var(--font-family); */
+  color: var(--primary-color);
+  letter-spacing: 0em;
+}
+
+/* #__next {
+  overflow: hidden;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}

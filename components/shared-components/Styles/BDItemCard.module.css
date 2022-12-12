@@ -1,0 +1,64 @@
+.itemCard {
+  font: 14px/1 "Open Sans", sans-serif;
+  /* margin-bottom: 20px; */
+  cursor: pointer;
+  position: relative;
+}
+
+.outer {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.inner {
+  padding-top: 160%;
+}
+
+.itemText {
+  height: 100px !important;
+}
+
+.itemTitle {
+  margin-top: 10px;
+  /* text-align: center; */
+  /* text-transform: uppercase; */
+  font-weight: 600 !important;
+  /* letter-spacing: 0.1em; */
+  color: #111;
+  line-height: 1.6em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.price {
+  text-align: center;
+  margin: 10px 0;
+  display: flex;
+  align-items: baseline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600 !important;
+}
+
+.listPrice {
+  margin-right: 5px;
+  color: #bbb;
+  text-decoration: line-through;
+  font-size: 0.8em;
+}
+
+.shortDesc {
+  font-size: 13px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .itemTitle {
+    font-size: 0.8em;
+  }
+  .price {
+    font-size: 0.8em;
+  }
+}

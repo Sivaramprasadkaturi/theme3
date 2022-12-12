@@ -1,0 +1,30 @@
+.attribute-option-message {
+  width: 90%;
+}
+
+/* Adds a check mark to the selected attribute - disabled as asked
+.attribute-option-image-wrapper.active .attribute-option-image::after {
+  content: "\2713";
+  position: absolute;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #111;
+  text-shadow: 0px 0px 7px #fff, 0 0 0px #fff;
+} */
+
+.attribute-size .attribute-option-image-wrapper.active::after {
+  content: "";
+  position: absolute;
+  height: 140%;
+  width: 120%;
+  border: 2px solid #000;
+  top: -20%;
+  left: -10%;
+  z-index: -1;
+}
+
+.attribute-option-image-wrapper.disabled:hover .attribute-option-tooltip {
+  display: block;
+}
